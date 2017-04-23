@@ -1,8 +1,6 @@
 header {
   display: flex;
   align-items: center;
-  position: fixed;
-  z-index: 1;
   width:100%;
   border-bottom: 1px solid black;
   background-color: white;
@@ -20,6 +18,7 @@ header img {
   justify-content: flex-start;
   flex-grow: 1;
   padding-left: 30px;
+  border: 1px solid black;
 }
 .logo span {
   color: MediumAquamarine;
@@ -39,4 +38,29 @@ nav span a {
 }
 body {
   margin-left: 0;
+}
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid black;
+}
+.column.large {
+  width: 630px;
+  display: inline-flex;
+  flex-flow: column;
+  border: 1px solid black;
+}
+.column.medium {
+  width: 300px;
+  display: inline-flex;
+  flex-flow: column;
+  border: 1px solid black;
+}
+.column.small {
+  width: 240px;
+  display: inline-flex;
+  flex-flow: column;
+  border: 1px solid black;
 }
